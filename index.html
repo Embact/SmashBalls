@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Smash Balls</title>
+      <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+   </head>
+   <body>
+      <div class="score"><span>Score</span><span id="score">0</span></div>
+      <div class="ability">
+         <span id="abilitybar"></span>
+      </div>
+      <div class="health">
+         <span id="healthbar"></span>
+      </div>
+      <div class="gamename">
+         Smash
+         <div>Balls</div>
+      </div>
+      <div class="pauseScreen">
+         <div class="btn-Container">
+            <span class="highScore"><span>327498</span><span>Highscore</span></span>
+            <span class="leaderItem ttlScore"><span>Score</span><span></span></span>
+            <span class="leaderItem ttlKills"><span>Kills</span><span></span></span>
+            <span class="leaderItem ttlBullets"><span>Bullets</span><span></span></span>
+            <div id="continueGame">Continue</div>
+            <span></span>
+         </div>
+      </div>
+      <div class="startScreen">
+         <input type="text" id="playerName" maxlength="10" placeholder="Your Name" />
+         <div class="btn-Container">
+            <div id="startGame">Start Game</div>
+            <div>Press <span>Left Click</span> Or <span>Space</span> to Shoot...</div>
+         </div>
+      </div>
+      <div id="copyright"><a href="https://embact.com" target="_blank">Embact</a></div>
+      <canvas></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+      <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+         integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      ></script>
+      <script src="index.js"></script>
+   </body>
+</html>
